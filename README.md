@@ -101,5 +101,5 @@ The testbench verifies functionality using task-based stimulus generation.
   • Verifies stored values
   
 
-## Waveform Output
-![image alt](https://github.com/monish-sr/memory-verilog/blob/ceb216596f4d3305de4dcefe0284db736b268f8b/Screenshot%202026-05-01%20112402.png)
+## Waveform 
+![image alt](https://github.com/monish-sr/memory-verilog/blob/300b8c4b708787a5a3c35a820447f8bef6b39e83/Waveform%20-%20Memory.png)
