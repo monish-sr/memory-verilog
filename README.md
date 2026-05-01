@@ -25,11 +25,11 @@ This project implements a parameterized synchronous memory module in Verilog alo
 
 The memory is implemented as a register array:
 
-  • Depth: Number of memory locations
+  • **Depth:** Number of memory locations
   
-  • Width: Size of each memory word
+  • **Width:** Size of each memory word
   
-  • Address Width: Automatically calculated using $clog2(depth)
+  • **Address Width:** Automatically calculated using $clog2(depth)
 
 ### Key Features
 
@@ -42,3 +42,36 @@ The memory is implemented as a register array:
   • Valid-Ready handshake mechanism
 
   • Memory initialized to zero on reset
+
+## Working Principle
+### Reset Phase
+  • When rst_i = 1:
+  
+--------> Memory is cleared
+
+--------> ready_o and rdata_o are reset
+
+### Write Operation
+  • Triggered when:
+  
+--------> valid_i = 1
+
+--------> wr_rd_i = 1
+
+  • Data (wdata_i) is written to mem[addr_i]
+  
+### Read Operation
+
+  • Triggered when:
+  
+--------> valid_i = 1
+
+--------> wr_rd_i = 0
+
+  • Data from mem[addr_i] is assigned to rdata_o
+  
+### Handshake Logic
+
+  • ready_o is asserted when the module accepts a valid request
+  
+  • Ensures controlled data transfer
