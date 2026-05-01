@@ -100,3 +100,6 @@ The testbench verifies functionality using task-based stimulus generation.
   • Reads data sequentially from all addresses
 
   • Verifies stored values
+
+## Waveform Output
+![image alt](https://github.com/monish-sr/memory-verilog/blob/ceb216596f4d3305de4dcefe0284db736b268f8b/Screenshot%202026-05-01%20112402.png)
