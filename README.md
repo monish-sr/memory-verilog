@@ -7,11 +7,15 @@ This project implements a parameterized synchronous memory module in Verilog alo
 **The design supports configurable:**
 
   • Memory depth
+  
   • Data width
+  
   • Address width
 
 **It demonstrates fundamental concepts like:**
 
   • Synchronous reset
+  
   • Read/Write operations
+  
   • Handshaking using valid and ready signals
