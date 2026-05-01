@@ -80,14 +80,13 @@ The memory is implemented as a register array:
 
 The testbench verifies functionality using task-based stimulus generation.
 
-### Tasks Implemented
-#### ✔ Reset Task
+### ✔ Reset Task
 
   • Initializes all signals
 
   • Applies reset for 2 clock cycles
 
-#### ✔ Write Task
+### ✔ Write Task
 
   • Writes random data to all memory locations
 
@@ -95,11 +94,12 @@ The testbench verifies functionality using task-based stimulus generation.
 
   • Waits for ready_o before proceeding
 
-#### ✔ Read Task
+### ✔ Read Task
 
   • Reads data sequentially from all addresses
 
   • Verifies stored values
+  
 
 ## Waveform Output
 ![image alt](https://github.com/monish-sr/memory-verilog/blob/ceb216596f4d3305de4dcefe0284db736b268f8b/Screenshot%202026-05-01%20112402.png)
