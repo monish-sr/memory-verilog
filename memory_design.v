@@ -1,29 +1,3 @@
-/*
-	1. Memory Design coding
-	 a. Consider example: 1Kb memory with WIDTH = 16
-		  i. DEPTH? (2 ** 10/2 ** 4)
-	 b. Name of module: memory
-		  i. Module memory
-		  ii. Ports: clk, rst, addr, wr_rd, etc with their directions as
-		  _ior_o
-	 c. Make memory code parameterizable
-		  i. List down parameters
-	 d. Define memory ports
-
-	 e. Define memory using DEPTH and WIDTH
-
-	 f. Create basic TB
-		  i. Memory is array of vector
-		  ii. Include memory.v
-		  iii. Define module tb
-		  iv. Instantiate memory
-		  v. Run the simulation
-			   1. To check if compilation and simulation are happening properly.
-	 g. Coming up with Memory algorithm
-		  i. Implement using Verilog
-
-
-*/
 //Memory Design
 module memory #(parameter depth = 16,width = 4,addr_width = $clog2(depth))
 (clk_i,rst_i,wr_rd_i,valid_i,wdata_i,addr_i,ready_o,rdata_o);
